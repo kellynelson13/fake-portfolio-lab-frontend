@@ -17,7 +17,7 @@ const Projects = (props) => {
     return projects.map((proj) => {
       const { name, live, git, image } = proj;
       return (
-        <div>
+        <div className="project">
           <h1>{name}</h1>
           <a href={git}>
           <button>Github</button>
@@ -25,7 +25,8 @@ const Projects = (props) => {
         <a href={live}>
           <button>Live Site</button>
         </a>
-          <img style={{width:"90%"}}src={image} alt={name}/>
+          <img src={image} alt={name}/>
+          
         </div>
       );
     });
